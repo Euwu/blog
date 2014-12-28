@@ -1,0 +1,43 @@
+<!DOCTYPE HTML5>
+  <style type="text/css">
+  body{
+    font-family: verdana, 微軟正黑體;
+  }
+  .div-title{
+  	color: white;
+  	background-color: black;
+  	padding: 20px;
+  }
+  .content{
+    padding: 2em;
+  }
+  .index-buttom{
+    padding: 5px;
+    border: 1px solid black;
+    display: inline; 
+    margin-left: 32px;
+  } 
+  .date{
+  font-size: 8px;
+  }
+  </style>
+  <html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+      <div class="div-title">
+        <h1 >{{ page.title }}</h1>
+      </div>
+
+      <div class="content">
+        <span class="date">{{ page.date}}</span>
+        {{ content }}
+      </div>
+      
+      <div class="index-buttom">
+      <a href="/index.html">index</a>
+      </div>
+  </body>
+  </html>
+     

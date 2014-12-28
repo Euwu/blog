@@ -1,0 +1,15 @@
+---
+layout: post
+title: Euwu's Place	
+---
+<style type="text/css">
+.date{
+	font-size: 8px;
+}
+</style>
+<div>
+{% for post in site.posts %}
+  <a href="{{ post.url }}">{{ post.title }}</a> <span class="date">{{ post.date }}</span>
+  <hr>
+</div>
+{% endfor %}
